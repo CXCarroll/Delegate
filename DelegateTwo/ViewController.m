@@ -23,6 +23,7 @@
     [super viewDidLoad];
 	boringViewController = [[BoringViewController alloc] initWithNibName:nil bundle:nil];
     [self.view addSubview:boringViewController.view];
+    boringViewController.delegate = self;
     
 }
 

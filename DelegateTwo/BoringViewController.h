@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ColorDelegate.h"
 
 @interface BoringViewController : UIViewController
+@property (strong, nonatomic)id <ColorDelegate> delegate;
 
 @end

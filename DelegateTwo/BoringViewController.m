@@ -9,10 +9,13 @@
 #import "BoringViewController.h"
 
 @interface BoringViewController ()
+- (IBAction)green:(id)sender;
+- (IBAction)red:(id)sender;
 
 @end
 
 @implementation BoringViewController
+@synthesize delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,4 +38,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)green:(id)sender {
+    [delegate changeColor:[UIColor greenColor]];
+}
+
+- (IBAction)red:(id)sender {
+    [delegate changeColor:[UIColor redColor]];
+}
 @end
